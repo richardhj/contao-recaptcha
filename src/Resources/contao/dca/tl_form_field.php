@@ -11,6 +11,6 @@
  * @license   https://github.com/richardhj/contao-recaptcha/blob/master/LICENSE LGPL-3.0
  */
 
-use Richardhj\ContaoReCaptchaBundle\Form\ReCaptcha;
 
-$GLOBALS['TL_FFL']['recaptcha'] = ReCaptcha::class;
+$GLOBALS['TL_DCA']['tl_form_field']['palettes']['recaptcha'] =
+    '{type_legend},type,label;{expert_legend:hide},class,accesskey,tabindex;{template_legend:hide},customTpl;{invisible_legend:hide},invisible';
