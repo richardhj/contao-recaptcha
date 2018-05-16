@@ -1,0 +1,38 @@
+{
+  "name": "richardhj/contao-recaptcha",
+  "description": "Google reCaptcha integration for Contao Open Source CMS",
+  "type": "contao-bundle",
+  "license": "LGPL-3.0-or-later",
+  "authors": [
+    {
+      "name": "Richard Henkenjohann",
+      "email": "richardhenkenjohann@googlemail.com",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/richardhj/contao-recaptcha/issues",
+    "source": "https://github.com/richardhj/contao-recaptcha"
+  },
+  "require": {
+    "php": "^7.1",
+    "contao/core-bundle": "^4.5",
+    "google/recaptcha": "~1.1"
+  },
+  "require-dev": {
+    "contao/manager-plugin": "2.2",
+    "psr/log": "~1.0",
+    "symfony/dependency-injection": "~3.3",
+    "symfony/http-foundation": "~3.3",
+    "symfony/http-kernel": "~3.3",
+    "symfony/translation": "~3.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Richardhj\\ContaoReCaptchaBundle\\": "src/"
+    }
+  },
+  "extra": {
+    "contao-manager-plugin": "Richardhj\\ContaoReCaptchaBundle\\ContaoManager\\Plugin"
+  }
+}

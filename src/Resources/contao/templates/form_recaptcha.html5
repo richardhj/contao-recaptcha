@@ -1,0 +1,12 @@
+<?php $this->extend('form_row'); ?>
+
+<?php $this->block('field'); ?>
+<?php if ($this->hasErrors()): ?>
+    <p class="error"><?= $this->getErrorAsString() ?></p>
+<?php endif; ?>
+
+<div class="g-recaptcha" id="recaptcha-<?= $this->id ?>" data-sitekey="<?= $this->reCaptchaSiteKey ?>">
+</div>
+
+<script src="https://www.google.com/recaptcha/api.js" defer async></script>
+<?php $this->endblock(); ?>
